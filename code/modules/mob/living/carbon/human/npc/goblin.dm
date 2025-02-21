@@ -577,6 +577,8 @@
 		return
 	if(!in_range(src, user))
 		return
+	if(alert("Are you sure you want to become an invading goblin? You may not be able to return to your body.",,"Yes","No")!="Yes")
+		return
 	if(gobs >= (maxgobs+1))
 		to_chat(user, span_danger("Too many Gobs."))
 		return
